@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+/* 
+    || Mobile Screens
+*/
+
+@media only screen and (max-width: 7680px) {
+    .container {
+        max-width: 375px;
+        padding: 40px 25px 0 25px;
+        margin: 0 25px;
+    }
+
+    .advice-body {
+        font-size: 22px;
+    }
+
+    .generate-btn {
+        top: 32px;
+        padding: 20px;
+    }
+}
+
+/* 
+    || Tablet and Desktop Screens
+*/
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 500px;
+        padding: 40px 40px 0 40px;
+    }
+
+    .advice-body {
+        font-size: 24px;
+    }
+
+    .divider {
+        content: url('../images/pattern-divider-desktop.svg');
+    }
+
+    .generate-btn {
+        padding: 17px;
+        top: 28px;
+    }
+
+    .generate-btn > img {
+        width: 22px;
+    }
+}
+
+/* 
+    || Global Styles
+*/
+
+:root {
+    --cyan: hsl(193, 38%, 86%);
+    --green: hsl(150, 100%, 66%);
+    --gray-blue: hsl(217, 19%, 38%);
+    --dark-gray-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+    --manrope: 'Manrope', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--manrope);
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 
+    || General Styles
+*/
+
+.container {
+    background-color: var(--dark-gray-blue);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.advice-header {
+    color: var(--green);
+    letter-spacing: 3px;
+    font-size: 12px;
+    padding-bottom: 25px;
+}
+
+.advice-body {
+    color: var(--cyan);
+    padding-bottom: 25px; 
+}
+
+.divider {
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+.generate-btn {
+    position: relative;
+    display: flex;
+    background-color: var(--green);
+    margin: 0 auto;
+    border-radius: 50%;
+    width: fit-content;
+    cursor: pointer;
+    
+}
+
+.generate-btn > img {
+    background-color: var(--green);
+    cursor: pointer;
+}
